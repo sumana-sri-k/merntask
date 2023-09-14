@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12</title>
+    <style>
+        html,body{
+            background-color: #e04794;
+        }
+        .outside{
+            background-color: #872657;
+            border: 1px solid #e04794;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 12%;
+            padding: 30px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .Register{
+            width: 320px;
+            padding: 3%;
+        }
+        td{
+            padding: 10px;
+        }
+        .Register:hover{
+            background-color: #e04794;
+        }
+    </style>
+</head>
+<body>
+    <div class="outside">
+            <form>
+                <table>
+                    <tr>
+                        <td><label>Name:</label></td>
+                        <td><input type="text" placeholder="User Name" id="userId"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email:</label></td>
+                        <td><input type="email" placeholder="Email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password :</label></td>
+                        <td><input type="password" placeholder="Password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Phone Number :</label></td>
+                        <td><input type="text" placeholder="Name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender :</label></td>
+                        <td><input type="radio" name="gender" id="male">Male
+                            <input type="radio" name="gender" id="female">Female
+                            <input type="radio" name="gender" id="other">Other</td>
+                    </tr>
+                    <tr>
+                        <td><label>Language :</label></td>
+                        <td><select style="width: 150px" id="country">
+                                <option>Select Language</option>
+                                <option>English</option>
+                                <option>Hindi</option>
+                                <option>Telugu</option>
+                                <option>Tamil</option>
+                                <option>Kannada</option>
+                                <option>Malayalam</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="zipCode">Zip Code:</label></td>
+                        <td><input type="text" id="zipCode"></td>
+                    </tr>
+                    <tr>
+                        <td><label>About :</label></td>
+                        <td><textarea id="about"></textarea></td>
+                    </tr>
+                </table>
+                <button type="button" class="Register"><b>Register</b></button><br>
+            </form>
+    </div>
+</body>
+</html>
